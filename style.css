@@ -966,6 +966,11 @@ ul, ol {
     margin: 0 auto;
 }
 
+.achievements-grid.achievements-5 {
+    max-width: 1000px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .achievement-card {
     padding: 28px;
     text-align: center;
@@ -1263,7 +1268,11 @@ ul, ol {
     }
 
     .achievements-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .achievements-grid.achievements-5 {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .project-header {
